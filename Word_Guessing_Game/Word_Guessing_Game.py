@@ -22,7 +22,7 @@ while count < 7:
     if guess == word:
         print(f'Congratulations! You find the word in {count + 1} guesses')
         break
-    for i in range(min(len(guess), len(word))):
+    for i in range(len(word)):
         if guess[i] == word[i]:
             result += guess[i]
         else:
